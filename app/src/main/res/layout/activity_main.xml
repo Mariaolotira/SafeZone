@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/edtemaillogin"
+        android:layout_width="320dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginBottom="30dp"
+        android:ems="10"
+        android:hint="Enter Email"
+        android:inputType="text"
+        android:textColorHint="#F41313"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/edtpasswordlogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edtpasswordlogin"
+        android:layout_width="320dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginEnd="75dp"
+        android:layout_marginBottom="32dp"
+        android:ems="10"
+        android:hint="Enter Password"
+        android:inputType="textPassword"
+        android:textColor="@color/black"
+        android:textColorHighlight="#EE0808"
+        android:textColorHint="#F40404"
+        app:layout_constraintBottom_toTopOf="@+id/btnloginlog"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtemaillogin" />
+
+    <Button
+        android:id="@+id/btnloginlog"
+        android:layout_width="300dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="23dp"
+        android:text="LOGIN"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintBottom_toTopOf="@+id/btnregisterlog"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtpasswordlogin" />
+
+    <Button
+        android:id="@+id/btnregisterlog"
+        android:layout_width="300dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="166dp"
+        android:text="REGISTER"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnloginlog" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

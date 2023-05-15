@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="MissingConstraints,UselessLeaf,SpeakableTextPresentCheck"
+    tools:layout_editor_absoluteX="16dp"
+    tools:layout_editor_absoluteY="69dp">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        tools:context=".FormActivity">
+
+
+        <Button
+            android:id="@+id/btnsubmit"
+            android:layout_width="350dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:text="SUBMIT"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.482"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnupload"
+            tools:ignore="HardcodedText,VisualLintButtonSize" />
+
+        <Button
+            android:id="@+id/btnupload"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="1dp"
+            android:text="UPLOAD FILES"
+            app:layout_constraintBottom_toTopOf="@+id/btnsubmit"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2"
+            tools:ignore="HardcodedText,VisualLintButtonSize" />
+
+        <Button
+            android:id="@+id/btnimageform"
+            android:layout_width="350dp"
+            android:layout_height="200dp"
+            android:layout_marginStart="38dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="38dp"
+            android:layout_marginBottom="1dp"
+            android:padding="10dp"
+            app:cornerRadius="5dp"
+            app:icon="@android:drawable/ic_menu_upload"
+            app:iconSize="50dp"
+            app:layout_constraintBottom_toTopOf="@+id/btnupload"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtdetailsfrm"
+            app:layout_constraintVertical_bias="1.0"
+            tools:ignore="SpeakableTextPresentCheck,VisualLintButtonSize" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="7dp"
+            android:layout_marginEnd="7dp"
+            android:layout_marginBottom="6dp"
+            android:text="Related Files"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/btnupload"
+            app:layout_constraintEnd_toEndOf="@+id/btnimageform"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/btnimageform"
+            app:layout_constraintTop_toBottomOf="@+id/ImageView"
+            tools:ignore="HardcodedText,TextSizeCheck" />
+
+        <ImageView
+            android:id="@+id/ImageView"
+            android:layout_width="229dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="6dp"
+            app:layout_constraintBottom_toTopOf="@+id/textView2"
+            app:layout_constraintEnd_toEndOf="@+id/btnimageform"
+            app:layout_constraintTop_toBottomOf="@+id/edtdetailsfrm"
+            app:srcCompat="@drawable/ic_menu_gallery"
+            tools:ignore="ContentDescription" />
+
+        <EditText
+            android:id="@+id/edtdetailsfrm"
+            android:layout_width="300dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="21dp"
+            android:layout_marginEnd="21dp"
+            android:layout_marginBottom="37dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="Incident Details"
+            android:inputType="textMultiLine"
+            android:textColorHint="#8D6E63"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toTopOf="@+id/ImageView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtlocationfrm"
+            tools:ignore="Autofill,HardcodedText" />
+
+        <EditText
+            android:id="@+id/edtlocationfrm"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="11dp"
+            android:layout_marginEnd="11dp"
+            android:layout_marginBottom="19dp"
+            android:ems="10"
+            android:hint="Incident Location"
+            android:inputType="text"
+            android:textColorHint="#8D6E63"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toTopOf="@+id/edtdetailsfrm"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edttimefrm"
+            tools:ignore="Autofill,HardcodedText" />
+
+        <EditText
+            android:id="@+id/edtdatefrm"
+            android:layout_width="200dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="21dp"
+            android:layout_marginBottom="2dp"
+            android:ems="10"
+            android:hint="Enter Date"
+            android:inputType="date"
+            android:textColorHint="#8D6E63"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="@+id/edttimefrm"
+            app:layout_constraintEnd_toStartOf="@+id/edttimefrm"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/edttimefrm"
+            tools:ignore="Autofill,HardcodedText" />
+
+        <EditText
+            android:id="@+id/edtidfrm"
+            android:layout_width="300dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="13dp"
+            android:layout_marginEnd="13dp"
+            android:layout_marginBottom="9dp"
+            android:ems="10"
+            android:hint="ID Number"
+            android:inputType="number"
+            android:textColorHint="#8D6E63"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toTopOf="@+id/edttimefrm"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtlastnamefrm"
+            tools:ignore="Autofill,HardcodedText" />
+
+        <EditText
+            android:id="@+id/edtlastnamefrm"
+            android:layout_width="300dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginEnd="6dp"
+            android:layout_marginBottom="9dp"
+            android:ems="10"
+            android:hint="Last Name"
+            android:inputType="text"
+            android:textColorHint="#8D6E63"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toTopOf="@+id/edtidfrm"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtfirstnamefrm"
+            tools:ignore="Autofill,HardcodedText" />
+
+        <Button
+            android:id="@+id/btnback"
+            android:layout_width="90dp"
+            android:layout_height="63dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:foregroundGravity="left"
+            android:gravity="left"
+            app:icon="@android:drawable/ic_menu_revert"
+            app:iconSize="50dp"
+            app:layout_constraintBottom_toTopOf="@+id/edtfirstnamefrm"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="HardcodedText,InefficientWeight,RtlHardcoded,SpeakableTextPresentCheck,VisualLintButtonSize" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:gravity="right"
+            android:layout_marginEnd="16dp"
+            android:text="Report An Incident"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="@+id/btnback"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:ignore="HardcodedText,RtlHardcoded,TextSizeCheck" />
+
+        <EditText
+            android:id="@+id/edtfirstnamefrm"
+            android:layout_width="300dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="13dp"
+            android:layout_marginEnd="13dp"
+            android:layout_marginBottom="9dp"
+            android:ems="10"
+            android:hint="First Name"
+            android:inputType="text"
+            android:textColorHint="#8D6E63"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toTopOf="@+id/edtlastnamefrm"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnback"
+            tools:ignore="Autofill,HardcodedText" />
+
+        <EditText
+            android:id="@+id/edttimefrm"
+            android:layout_width="156dp"
+            android:layout_height="72dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="13dp"
+            android:ems="10"
+            android:hint="Time"
+            android:inputType="time"
+            android:textColorHint="#8D6E63"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toTopOf="@+id/edtlocationfrm"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/edtdatefrm"
+            app:layout_constraintTop_toBottomOf="@+id/edtidfrm"
+            tools:ignore="Autofill,HardcodedText" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
