@@ -1,51 +1,131 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/mainbackground"
-    android:backgroundTintMode="screen"
+    android:background="@drawable/backgroundsafezone"
     tools:context=".HomeActivity">
 
-    <Button
-        android:id="@+id/btnreporthome"
-        style="@style/Widget.AppCompat.Button"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="13dp"
-        android:layout_marginTop="387dp"
-        android:layout_marginEnd="13dp"
-        android:layout_marginBottom="38dp"
-        android:text="Report An Incident"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        app:icon="?android:attr/actionModeFindDrawable"
-        app:iconSize="38dp"
-        app:layout_constraintBottom_toTopOf="@+id/btnemergencycallhome"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btnemergencycallhome"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="23dp"
-        android:layout_marginEnd="23dp"
-        android:layout_marginBottom="98dp"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="411dp"
+        android:layout_height="180dp"
+        android:layout_below="@+id/areabtn"
+        android:backgroundTint="#F90727"
+        android:layout_alignParentBottom="true"
+        android:fontFamily="serif"
         android:text="Emergency Call"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        android:textColor="#F50505"
-        android:textSize="36sp"
+        android:textAppearance="@color/black"
+        android:textColor="@color/black"
+        android:textSize="38sp"
         android:textStyle="bold"
         app:icon="@android:drawable/ic_dialog_alert"
+        app:iconSize="130dp"
+        app:iconTint="@color/white"
+        app:strokeColor="#F10606"
+        tools:ignore="HardcodedText,MissingConstraints"
+        tools:layout_editor_absoluteY="426dp" />
+
+    <TextView
+        android:id="@+id/areabtn"
+        android:layout_width="200dp"
+        android:layout_height="185dp"
+        android:layout_below="@+id/torchbtn"
+        android:layout_marginTop="250dp"
+        android:layout_marginEnd="0dp"
+        android:fontFamily="serif"
+        android:text="Safe Zones"
+        android:layout_marginStart="210dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textAppearance="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:background="@color/white" />
+
+
+    <Button
+        android:id="@+id/torchbtn"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="70dp"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="300dp"
+        android:layout_marginLeft="105dp"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="@color/black"
+        app:icon="@drawable/baseline_flashlight_on_24"
         app:iconPadding="10dp"
         app:iconSize="38dp"
-        app:iconTint="#F70505"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnreporthome"
-        app:strokeColor="#F10606" />
+        app:iconTint="@color/white"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/firstaidbtn"
+        android:layout_width="190dp"
+        android:layout_height="185dp"
+        android:layout_below="@+id/torchbtn"
+        android:layout_marginTop="250dp"
+        android:layout_marginEnd="0dp"
+        android:background="@drawable/firstaid"
+        android:fontFamily="serif"
+        android:textAppearance="@color/black"
+        android:text="First Aid"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/torchbtn"
+        android:layout_alignParentEnd="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="299dp"
+        android:layout_marginEnd="39dp"
+        app:srcCompat="@drawable/map" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:fontFamily="serif"
+        android:text="Hello!!"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textAppearance="@color/black"
+        android:textColor="@color/black"
+        android:textSize="50dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:fontFamily="serif"
+        android:textAppearance="@color/black"
+        android:textColor="@color/black"
+        android:text="Your Safety Begins With You"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/btnlogindirect"
+        android:layout_width="70dp"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/loginimage"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+</RelativeLayout>

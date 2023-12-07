@@ -145,4 +145,6 @@
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
     <string name="title_activity_form_scrolling">FormScrollingActivity</string>
+    <string name="google_map_key">AIzaSyB_qsP38AOP_P0Md1Pz-48TDaJYjTP3vbjo</string>
+    <string name="google_maps_key"><![CDATA[\"https://maps.googleapis.com/maps/api/js?key=&callback=initMap\"]]></string>
 </resources>

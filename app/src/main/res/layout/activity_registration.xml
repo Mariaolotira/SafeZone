@@ -4,13 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="@drawable/backgroundsafezone"
     tools:context=".RegistrationActivity">
 
     <EditText
         android:id="@+id/edtfirstnamereg"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
         android:layout_marginStart="55dp"
         android:layout_marginTop="89dp"
         android:layout_marginEnd="55dp"
@@ -23,61 +23,14 @@
         android:textColorHint="#F20808"
         app:layout_constraintBottom_toTopOf="@+id/edtsecondnamereg"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/edtpasswordreg"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="55dp"
-        android:layout_marginEnd="55dp"
-        android:layout_marginBottom="70dp"
-        android:ems="10"
-        android:hint="Enter Password"
-        android:inputType="textPassword"
-        android:textColor="#060606"
-        android:textColorHighlight="#F50606"
-        android:textColorHint="#FC0808"
-        app:layout_constraintBottom_toTopOf="@+id/btnregisterreg"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtemailreg" />
-
-    <Button
-        android:id="@+id/btnregisterreg"
-        android:layout_width="250dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="126dp"
-        android:text="REGISTER"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtpasswordreg" />
-
-    <EditText
-        android:id="@+id/edtsecondnamereg"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="55dp"
-        android:layout_marginEnd="55dp"
-        android:layout_marginBottom="28dp"
-        android:ems="10"
-        android:hint="Enter Second Name"
-        android:inputType="text"
-        android:textColor="#0B0B0B"
-        android:textColorHighlight="#F70A0A"
-        android:textColorHint="#F80707"
-        app:layout_constraintBottom_toTopOf="@+id/edtemailreg"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtfirstnamereg" />
-
-    <EditText
         android:id="@+id/edtemailreg"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
         android:layout_marginStart="55dp"
         android:layout_marginEnd="55dp"
         android:layout_marginBottom="33dp"
@@ -89,7 +42,60 @@
         android:textColorHint="#F90808"
         app:layout_constraintBottom_toTopOf="@+id/edtpasswordreg"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtsecondnamereg" />
+        app:layout_constraintTop_toBottomOf="@+id/edtsecondnamereg"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/edtsecondnamereg"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginBottom="28dp"
+        android:ems="10"
+        android:hint="Enter Second Name"
+        android:inputType="text"
+        android:textColor="#0B0B0B"
+        android:textColorHighlight="#F70A0A"
+        android:textColorHint="#F80707"
+        app:layout_constraintBottom_toTopOf="@+id/edtemailreg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtfirstnamereg" />
+
+    <EditText
+        android:id="@+id/edtpasswordreg"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginBottom="70dp"
+        android:ems="10"
+        android:hint="Enter Password"
+        android:inputType="textPassword"
+        android:textColor="#060606"
+        android:textColorHighlight="#F50606"
+        android:textColorHint="#FC0808"
+        app:layout_constraintBottom_toTopOf="@+id/btnregisterreg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtemailreg"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/btnregisterreg"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="126dp"
+        android:text="REGISTER"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtpasswordreg" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
